@@ -1,15 +1,15 @@
 {
-  "name": "angular2-webpack-starter",
-  "version": "6.0.0",
-  "description": "An Angular 2 Webpack Starter kit featuring Angular 2 (Router, Http, Forms, Services, Tests, E2E, Coverage), Karma, Protractor, Jasmine, Istanbul, TypeScript, and Webpack by AngularClass",
+  "name": "homegame-webclient",
+  "version": "0.0.1",
+  "description": "Webclient for homegame-server",
   "keywords": [
     "angular",
     "angular2",
     "webpack",
     "typescript"
   ],
-  "author": "Patrick Stapleton <patrick@angularclass.com>",
-  "homepage": "https://github.com/angularclass/angular2-webpack-starter",
+  "author": "Benjamin Bittner <benjamin.bittner@omigos.de>",
+  "homepage": "https://github.com/MassiveHiggsField/homegame-webclient",
   "license": "MIT",
   "scripts": {
     "build:aot:prod": "npm run clean:dist && npm run clean:aot && cross-env BUILD_AOT=1 npm run webpack -- --config config/webpack.prod.js  --progress --profile --bail",
@@ -156,10 +156,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/angularclass/angular2-webpack-starter.git"
+    "url": "https://github.com/MassiveHiggsField/homegame-webclient.git"
   },
   "bugs": {
-    "url": "https://github.com/angularclass/angular2-webpack-starter/issues"
+    "url": "https://github.com/MassiveHiggsField/homegame-webclient/issues"
   },
   "engines": {
     "node": ">= 4.2.1",

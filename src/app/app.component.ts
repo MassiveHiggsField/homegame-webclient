@@ -19,12 +19,13 @@ import { AppState } from './app.service';
     './app.component.css'
   ],
   template: `
+    <div>
+      <a [href]="url">
+        <img [src]="angularclassLogo" width="25%">
+      </a>
+    </div>
     <nav>
       <a [routerLink]=" ['./'] "
-        routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
-        Index
-      </a>
-      <a [routerLink]=" ['./home'] "
         routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
         Home
       </a>
@@ -46,22 +47,18 @@ import { AppState } from './app.service';
       <router-outlet></router-outlet>
     </main>
 
+    
+    
     <pre class="app-state">this.appState.state = {{ appState.state | json }}</pre>
-
     <footer>
-      <span>WebPack Angular 2 Starter by <a [href]="url">@AngularClass</a></span>
-      <div>
-        <a [href]="url">
-          <img [src]="angularclassLogo" width="25%">
-        </a>
-      </div>
+      <span>Homegame-Webclient v0.0.1 <a [href]="url">@MassiveHiggsField</a></span>
     </footer>
   `
 })
 export class AppComponent implements OnInit {
-  public angularclassLogo = 'assets/img/angularclass-avatar.png';
-  public name = 'Angular 2 Webpack Starter';
-  public url = 'https://twitter.com/AngularClass';
+  public angularclassLogo = 'assets/img/card-logo.jpg';
+  public name = 'Homegame v0.0.1';
+  public url = 'https://github.com/MassiveHiggsField';
 
   constructor(
     public appState: AppState
